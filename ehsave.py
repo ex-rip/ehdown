@@ -12,6 +12,9 @@ import requests
 import sys
 import os
 
+cookie = "__cfduid=d8cbde10c794df782e83d349ed8a5af141555220973; ipb_member_id=3716746; ipb_pass_hash=2bc1635e71b49bff007d1c9f016564ed; ipb_session_id=39e36ee8fb23a3e5ede265626662ed1a; sk=ryma22517tpu7ery9e1lc1lsm6tu; event=1564142719"
+# cookie = "__cfduid=d8b4b92b674ab792d21ac987dec1a59fc1564369825; ipb_session_id=73f58ddcc09d8baf3e0c091c54084ed8; ipb_member_id=3441101; ipb_pass_hash=9ba3e58b9108c1e1e3ccd6189a2ac96e; sk=h2c5n11a29fnice0293iv4p6f3h0; star=1-193fe9c9f6; hath_perks=a.t1.m1-6514ba7e5c; event=1"
+
 header = {
 	'authority': 'e-hentai.org',
 	'cache-control': 'max-age=0',
