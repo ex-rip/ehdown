@@ -58,7 +58,7 @@ def down(url, id, refer):
 	f.close()
 
 def downpage(html):
-	pat = r'<a href="(https:\/\/e-hentai\.org\/s\/[0-9a-f]+\/[0-9]+-[0-9]+)">'
+	pat = r'<a href="(https:\/\/e[-x]hentai\.org\/s\/[0-9a-f]+\/[0-9]+-[0-9]+)">'
 	match = re.search(pat, html)
 	while match:
 		html = html[match.span()[1]:]
@@ -68,7 +68,7 @@ def downpage(html):
 			print(id + ".jpg already exists, skip!")
 		else:
 			ht = request(result).text
-			mat = re.search(r'<a href="(https:\/\/e-hentai\.org\/fullimg.php\?.+)">Download', ht)
+			mat = re.search(r'<a href="(https:\/\/e[-x]hentai\.org\/fullimg.php\?.+)">Download', ht)
 			if mat:
 				down(mat.group(1), id, result)
 			else:
